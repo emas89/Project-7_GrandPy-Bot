@@ -120,7 +120,7 @@ function button_papy_link() {
 	global_user_request.appendChild(figure_user);
 	global_user_request.appendChild(user_request);
 	dialogue.appendChild(global_user_request);
-	var url = encodeURI("https://ema-grandpybot.herokuapp.com/results/?query="+request);
+	var url = encodeURI("https://ema-grandpybot.herokuapp.com//results/?query="+request);
 	ajaxGet(url, display);
 	
 }
