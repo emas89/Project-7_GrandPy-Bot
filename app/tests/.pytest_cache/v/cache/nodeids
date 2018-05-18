@@ -1,0 +1,9 @@
+[
+  "test_gmaps_api.py::TestGoogleApi::()::test_geocode",
+  "test_gp_sentences.py::TestGp_answers::()::test_gp_sentences",
+  "test_online.py::Test_online::test_render_templates",
+  "test_online.py::Test_online::test_server_is_up_and_running",
+  "test_online.py::TestGlobalApi::test_global_api",
+  "test_parsing.py::TestParser::()::test_parsing",
+  "test_wiki_api.py::TestWikiApi::()::test_wikitext"
+]

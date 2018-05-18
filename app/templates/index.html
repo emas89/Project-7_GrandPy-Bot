@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- Meta -->
+		<meta charset="utf-8" /> <!-- encoding -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Microsoft Edge browser support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- responsive -->
+
+		<!-- Page title -->
+		<title>GrandPy Bot</title>
+
+		<!-- Bootstrap -->
+		<link href="../static/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Page style -->
+		<link rel="stylesheet" href="..\static\css\style.css">
+		<!-- Icon library for social logos on footer -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- favicon -->
+		<link rel="icon" type="image/png" href="..\static\img\favicon.png" />
+		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+
+		<!-- Related js scripts -->
+		<script src="../static/js/init_map.js"></script>
+		<script src="../static/js/dialogue.js"></script>
+		<script src="../static/js/ajax.js"></script>
+
+	</head>
+
+	<body>
+		<div id="container">
+			<!-- Header -->
+			<header class="row">
+				<h1>GRANDPY BOT</h1>
+				<h2>Le papy qui te raconte la géographie !</h2>
+			</header>
+
+			<div class="row">
+				<h3>Pose ta question géographique à GrandPy Bot, il te racontera une histoire !</h3>
+			</div>
+		
+			<!-- Webpage main content -->
+			<section>
+				<!-- user textbox -->
+				<div class="row" id="question_area">
+					<form class= "col-lg-offset-2 col-lg-8">
+						<input type="textarea" name="query" id="query" placeholder="Ex. Ehi Papy! Où se trouve Montmartre?"><figure id="papy_face"><img id="papy_face_pict" onclick="javascript:user_request_analyse();" src="../static/img/gp_query.png" alt="Papy_face"></figure>
+					</form>
+				</div>
+
+				<!-- dialogue and map display -->
+				<div>
+					<!-- dialogue display -->
+					<div class="row">
+						<div class="col-lg-offset-2 col-lg-8" id="dialogue"></div>
+					</div>
+					<!-- map display -->
+					<div class="row">
+						<div class="col-lg-offset-2 col-lg-8" id="map"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer class="row">
+				<p id="footer">&copy; Pellegrini Emanuele &#160;&#160;<a href="https://github.com/emas89/Project-7_GrandPy-Bot" class="fa fa-github"></a>&#160;&#160;<a href="https://www.linkedin.com/in/emanuele-pellegrini/" class="fa fa-linkedin"></a></p>
+			</footer>
+
+		</div>
+		
+	<!-- Googlemap initialisation -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ gmap_api_key }}&callback=initMap"></script>
+
+	<!-- Add event listener on form -->
+	<script src="../static/js/init_page.js"></script>
+	</body>
+</html>

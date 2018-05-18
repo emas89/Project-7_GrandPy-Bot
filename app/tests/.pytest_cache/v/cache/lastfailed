@@ -1,0 +1,8 @@
+{
+  "test_gp_sentences.py::Test_Gp_answers::()::test_gp_sentences": true,
+  "test_gp_sentences.py::Test_gpanswers::()::test_gp_sentences": true,
+  "test_gp_sentences.py::Test_gpanswers::()::test_show_gp_answer": true,
+  "test_online.py::TestGlobalApi::test_global_api": true,
+  "test_online.py::Test_online::test_render_templates": true,
+  "test_online.py::Test_online::test_server_is_up_and_running": true
+}
