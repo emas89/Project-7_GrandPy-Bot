@@ -33,7 +33,7 @@ html {
 body {
   background-image: url("/static/img/background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   width: 100%;
   padding-left:15px;
